@@ -39,6 +39,7 @@ class JWT
     public static $timestamp = null;
 
     public static $supported_algs = array(
+        'ES256' => array('openssl', 'SHA256'),
         'HS256' => array('hash_hmac', 'SHA256'),
         'HS512' => array('hash_hmac', 'SHA512'),
         'HS384' => array('hash_hmac', 'SHA384'),
